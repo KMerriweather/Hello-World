@@ -1,0 +1,37 @@
+def main():
+    var = "Hello. Welcome to the amazing program that helps with your endo diagnosis."
+    print(var)
+
+main ()
+
+name = input("What is your name? ")
+
+Join = input("'Would you like to know your pulpal diagnosis ' + name + "?" ).lower()
+if Join.startswith('y'):
+    print("Great. Let's get started with a few questions.")
+else:
+    print('It is okay. Maybe next time.')
+    exit()
+  ##Remember, this is how you terminate program if answer is no under "else" clause
+
+Pain = input("Do you have any dental pain?")
+if Pain.startswith('y'):
+      print ("Sorry to hear that.")
+else:
+    print("Great. You are believed to have normal pulpal tissues. However I recommend that you see your local dentist for further treatment. Thank you.")
+    exit()
+
+Cold = input("Are your teeth ever sensitive to cold things? Such as cool water?")
+if Cold.startswith('y'):
+    print("Okay. That is not normal.")
+else:
+    print('Pain yet not sensitive to cold items. You may have periapical problems. Please contact your nearest dentist to set up an appointment.')
+    exit()
+
+Linger = input("Does that coldness ever linger?")
+if Linger.startswith('y'):
+    print("Sorry. You have symptomatic irreversible pulpitis. A clinical diagnosis based on subjective and objective findings indicating that the vital inflamed pulp is incapable of healing. Additional descriptors: lingering thermal pain, spontaneous pain, referred pain.")
+else:
+    print('You have symptomatic reversible pulptitis. A clinical and histologic term denoting inflammation of the dental pulp. Pulpitis is clinically described as reversible when the vital inflamed pulp is able to heal following removal of caries inducing microbes.')
+    exit()
+
